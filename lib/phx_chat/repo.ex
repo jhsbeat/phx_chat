@@ -1,5 +1,7 @@
 defmodule PhxChat.Repo do
-  use Ecto.Repo, otp_app: :phx_chat
+  use Ecto.Repo, 
+    otp_app: :phx_chat, 
+    adapter: Ecto.Adapters.MySQL
 
   @doc """
   Dynamically loads the repository url from the
